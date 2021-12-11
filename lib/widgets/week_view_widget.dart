@@ -11,9 +11,27 @@ class WeekViewWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WeekView<Event>(
-      key: state,
-      width: width,
-    );
+    return Column(
+      children: [
+        SizedBox(height: 10,),
+        Container(
+          height: 100,
+          color: Colors.grey,
+        ),
+        SizedBox(height: 10,),
+        Container(
+          height: 100,
+          color: Colors.blueGrey,
+        ),
+        SizedBox(height: 10,),
+        SizedBox(
+          height: 400,
+          child: WeekView<Event>(
+            key: state,
+            width: width,
+          ),
+        ),
+      ]
+      );
   }
 }
