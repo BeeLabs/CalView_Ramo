@@ -4,6 +4,9 @@ import '../../extension.dart';
 import '../day_view_page.dart';
 import '../month_view_page.dart';
 import '../week_view_page.dart';
+import '../week_view_page2.dart';
+import 'mobile_home_page.dart';
+
 
 class MobileHomePage extends StatelessWidget {
   @override
@@ -34,6 +37,13 @@ class MobileHomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => context.pushRoute(WeekViewDemo()),
               child: Text("Week View"),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () => context.pushRoute(WeekViewDemo2()),
+              child: Text("Ramo"),
             ),
           ],
         ),
